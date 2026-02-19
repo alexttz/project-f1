@@ -1,0 +1,12 @@
+.drivers-page {
+  display: flex;
+}
+
+.selector-area {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-area {
+  flex: 1;
+}

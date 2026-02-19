@@ -13,8 +13,8 @@ export default function Header(): JSX.Element {
         </NavLink>
 
         <nav className="nav">
-          <NavLink to="/#" className={linkClass}>
-            #
+          <NavLink to="/drivers" className={linkClass}>
+            Drivers
           </NavLink>
         </nav>
       </div>

@@ -1,0 +1,34 @@
+[
+  { "num": 10, "name": "Pierre Gasly", "team": "Alpine" },
+  { "num": 43, "name": "Franco Colapinto", "team": "Alpine" },
+
+  { "num": 14, "name": "Fernando Alonso", "team": "Aston Martin" },
+  { "num": 18, "name": "Lance Stroll", "team": "Aston Martin" },
+
+  { "num": 5, "name": "Gabriel Bortoleto", "team": "Audi" },
+  { "num": 27, "name": "Nico Hulkenberg", "team": "Audi" },
+
+  { "num": 11, "name": "Sergio Perez", "team": "Cadillac" },
+  { "num": 77, "name": "Valtteri Bottas", "team": "Cadillac" },
+
+  { "num": 16, "name": "Charles Leclerc", "team": "Ferrari" },
+  { "num": 44, "name": "Lewis Hamilton", "team": "Ferrari" },
+
+  { "num": 31, "name": "Esteban Ocon", "team": "Haas" },
+  { "num": 87, "name": "Oliver Bearman", "team": "Haas" },
+
+  { "num": 1, "name": "Lando Norris", "team": "McLaren" },
+  { "num": 81, "name": "Oscar Piastri", "team": "McLaren" },
+
+  { "num": 12, "name": "Kimi Antonelli", "team": "Mercedes" },
+  { "num": 63, "name": "George Russell", "team": "Mercedes" },
+
+  { "num": 30, "name": "Liam Lawson", "team": "Racing Bulls" },
+  { "num": 41, "name": "Arvid Lindblad", "team": "Racing Bulls" },
+
+  { "num": 3, "name": "Max Verstappen", "team": "Red Bull Racing" },
+  { "num": 6, "name": "Isack Hadjar", "team": "Red Bull Racing" },
+
+  { "num": 23, "name": "Alexander Albon", "team": "Williams" },
+  { "num": 55, "name": "Carlos Sainz", "team": "Williams" }
+]
