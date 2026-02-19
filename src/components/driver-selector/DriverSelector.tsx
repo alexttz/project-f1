@@ -1,23 +1,16 @@
 import "./DriverSelector.css";
+import drivers from "../../lib/drivers.json";
+import { formatDriverPath } from "../../lib/formatDriverPath";
 
-import drivers from "./drivers.json";
+// Enquanto mause está em cima da foto do piloto, seta hovered com nome dele
+type Props = { setHovered: React.Dispatch<React.SetStateAction<string | null>>;};
 
-function formatDriverPath(name: string) {
-  const normalized = name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, "_");
-
-  return `${normalized}/${normalized}_profile.png`;
-}
-
-export default function DriverSelector(): JSX.Element {
+export default function DriverSelector({ setHovered }: Props): JSX.Element {
   return (
     <div className="selector">
       {drivers.map((driver) => (
         <div key={driver.num}>
-          <img src={`/drivers/${formatDriverPath(driver.name)}`} alt={driver.name}/>
+          <img src={`${formatDriverPath(driver.name)}`} alt={driver.name} onMouseEnter={() => setHovered(driver.name)} onMouseLeave={() => setHovered(null)}/>
         </div>
       ))}
     </div>

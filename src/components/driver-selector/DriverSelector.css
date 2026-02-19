@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: center;
   font-size: 10px;
+  transition: 250ms linear; 
 }
 
 .selector div img {
@@ -21,4 +22,10 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
+  cursor: pointer;
+}
+
+.selector div:hover{
+  background: #000000;
+  transform: scale(1.1);
 }

@@ -1,12 +1,38 @@
-.drivers-page {
+.drivers-page{
   display: flex;
-}
-
-.selector-area {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .content-area {
   flex: 1;
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  overflow: hidden;
+  height: 92.5vh;
+}
+
+.content-area img {
+  height: 230vh;       
+  width: auto;       
+  object-fit: cover;
+  object-position: top;
+}
+
+.selector-area{
+  flex: 0 0 200px;
+}
+
+.driver-name{
+  font-size: 90px;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+
+  font-family: 'Orbitron';
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transform: skewX(-5deg);
+  color: #0e1e92;
 }
