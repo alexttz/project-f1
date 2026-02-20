@@ -9,12 +9,12 @@ export default function Header(): JSX.Element {
     <header className="header">
       <div className="container header-inner">
         <NavLink to="/" className="brand">
-          F1 PROJECT
+          <img src="/public/logo.png" alt="F1 Stats Logo" className="logo" />
         </NavLink>
 
         <nav className="nav">
-          <NavLink to="/#" className={linkClass}>
-            #
+          <NavLink to="/drivers" className={linkClass}>
+            Drivers
           </NavLink>
         </nav>
       </div>
