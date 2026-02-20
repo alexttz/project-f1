@@ -1,5 +1,24 @@
 .drivers-page{
   display: flex;
+  background-image: url('../../../public/drivers-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.selector-area {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translateX(0);
+}
+
+.slide-out {
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+.content-area {
+  position: absolute;
+  width: 98%;
+  transition: all 0.5s ease;
 }
 
 .content-area {
@@ -9,30 +28,54 @@
   justify-content: center;
   overflow: hidden;
   height: 92.5vh;
-}
-
-.content-area img {
-  height: 230vh;       
-  width: auto;       
-  object-fit: cover;
-  object-position: top;
-}
-
-.selector-area{
-  flex: 0 0 200px;
-}
-
-.driver-name{
-  font-size: 90px;
-  position: absolute;
-  bottom: 20px;
-  padding: 10px 20px;
-  border-radius: 12px;
 
   font-family: 'Orbitron';
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 4px;
   transform: skewX(-5deg);
-  color: #0e1e92;
+}
+
+.selector-area{
+  padding-top: 23px;
+  flex: 0 0 200px;
+}
+
+.content-area img {
+  height: 190vh;
+  width: auto;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  z-index: 1;
+}
+
+.driver-name{
+  font-size: 80px;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  z-index: 2;
+  color: var(--teamColor);
+}
+
+.driver-number{
+  font-size: 600px;
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  z-index: 0;
+  pointer-events: none;
+  color: var(--teamColor);
+}
+
+.back-button{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 0;
 }
